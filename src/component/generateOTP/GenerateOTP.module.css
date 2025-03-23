@@ -1,0 +1,56 @@
+.generateOTPForm{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 450px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #485460;
+  background-color: rgb(231, 234, 236);
+}
+
+.generateOtpWord{
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 7px 1px 10px #14181b;
+}
+
+.otpGeneratorBox{
+  margin: auto;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.otpGeneratorBox p{
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: auto;
+}
+.generateOTPButton{
+  display: grid;
+  gap: 70px;
+}
+
+.generateOTPButton button{
+  margin-top: 50px;
+  width: 200px;
+  box-shadow: 5px 5px 10px #485460;
+  height: 50px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #3658c7;
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border: none;
+}
+
+.linkToLogOut{  
+    font-size: 1.2rem;
+    font-weight: bold;
+}

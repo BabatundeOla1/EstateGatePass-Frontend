@@ -1,0 +1,72 @@
+.signUp{
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 10px 5px 9px #14181b;
+}
+
+.newSignUpForm{
+  height: 700px;
+}
+
+.signUpForm{
+  height: 800px;
+  width:500px;
+  display: grid;
+  background-color: rgb(231, 234, 236);
+  gap: 10px ;
+  font-family:'Courier New', Courier, monospace;
+  box-shadow: 5px 5px 10px #b5b6b8;
+  margin: auto;
+}
+
+.signUpForm label{
+  font-size: 20px;
+}
+
+.signUpForm input{
+  margin-top: 20px;
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+  color: rgb(70, 66, 66);
+}
+.alreadyHaveAnAccount{
+  margin: 30px;
+  display: grid;
+}
+
+select{
+  width: 120px;
+  height: 30px;
+}
+
+.alreadyHaveAnAccount p{
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.alreadyHaveAnAccount button{
+  margin: 30px;
+  width: 170px;
+  height: 50px;
+  color: white;
+  background-color: #259e4d;
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  box-shadow: 5px 5px 10px #485460;
+  border: none;
+  margin-left: 120px;
+}
+.linkToLogin{
+  font-size: rem;
+  color: black;
+}
+.securityLinkToLogin{
+  margin-top: -20px;
+}
+
