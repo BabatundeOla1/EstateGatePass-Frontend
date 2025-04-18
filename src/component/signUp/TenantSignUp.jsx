@@ -22,6 +22,8 @@ export default function TenantSignUp() {
     const { name, value } = event.target;
     setProfile((prev) => ({ ...prev, [name]: value }));
   }
+
+
   const handleTenantSubmit = (event) => {
     event.preventDefault();
 
@@ -69,6 +71,8 @@ export default function TenantSignUp() {
           } 
           else {
             const data = await response.json();
+            const localStorageData = localStorage.setItem('tenant', JSON.stringify(data))
+            console.log(localStorageData)
             Swal.fire(data.message || 'Tenant registered successfully!');
             navigate('/generateOTP');
           }
@@ -109,7 +113,7 @@ export default function TenantSignUp() {
             </p> <br />
 
             <p className={styles.securityLinkToLogin} >Security? 
-              <Link to={'/securitySignup'}> Click to Register </Link> 
+              <Link className={styles.clickToRegister} to={'/securitySignup'}> Click to Register </Link> 
             </p>
           </div>
 

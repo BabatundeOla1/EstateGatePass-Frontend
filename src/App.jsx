@@ -6,6 +6,7 @@ import GenerateOTP from './component/generateOTP/GenerateOTP'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import SecuritySignUp from './component/signUp/SecuritySignUp'
 import ValidateOtp from './component/validateOtp/ValidateOtp'
+import CheckOut from './component/validateOtp/CheckOut'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/generateOTP' element = {<GenerateOTP/>}/>
         <Route path='/securitySignup' element = {<SecuritySignUp/>}/>
         <Route path='/validateOtp' element = {<ValidateOtp/>}/>
+        <Route path='/checkOut' element = {<CheckOut/>}/>
       </Routes>
     </Router>
   )

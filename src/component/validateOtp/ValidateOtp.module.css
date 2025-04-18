@@ -1,0 +1,82 @@
+.validateOTPForm {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 550px;
+  background-color: #f4f4f4;
+}
+
+.validateOtpWord {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.newLoginForm {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputBox {
+  margin-bottom: 1.5rem;
+}
+
+.inputBox label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.inputField:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.validateOTPButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.validateOTPButton button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.validateOTPButton button:hover {
+  background-color: #0056b3;
+}
+
+.linkToLogOut {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.linkToLogOut:hover {
+  text-decoration: underline;
+}

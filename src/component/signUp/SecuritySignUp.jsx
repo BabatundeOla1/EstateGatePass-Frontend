@@ -23,27 +23,24 @@ export default function SecuritySignUp() {
     setProfile((prev) => ({ ...prev, [name]: value }));
   }
 
+  console.log(profile)
+
   const handleSecuritySubmit = (event) => {
     event.preventDefault();
 
-    if (password === confirmPassword && password !== "") {
-          Swal.fire('Security registered successfully!');
-          navigate('/validateOtp');
-          fetchData();     
-        } else {
+    const {password} = profile;
+
           if (password === "") {
     
             setError('Password cannot be empty!');
             Swal.fire('Password cannot be empty!');
           } else {
-    
-            setError('Password does not match!');
-            Swal.fire('Password does not match');
+            Swal.fire('Security registered successfully!');
+            navigate('/validateOtp');
+            fetchData();  
           }
-        }
   }
 
-  
     const fetchData = async () => {
       try {
         const response = await fetch("http://localhost:9090/security/securityRegister", {
@@ -51,9 +48,14 @@ export default function SecuritySignUp() {
           headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(profile),
       });       
+
+            const data = await response.json();
+            const localStorageData = localStorage.setItem('tenant', JSON.stringify(data))
+            console.log(localStorageData)
   
             if(data.success){
               Swal.fire('Security registered successfully!');
+              navigate('/validateOtp')
             }
             else{
               setError(data.message);
@@ -74,10 +76,10 @@ export default function SecuritySignUp() {
     <div className={styles.newSignUpForm}>
       <form onSubmit = {handleSecuritySubmit}>
         <label htmlFor="firstName" > Name:</label> <br />
-        <input name='firstName' onChange={handleSecurityInput}  type="text" placeholder="firstName"   className={styles.firstName}  required/><br />
+        <input name='firstName' onChange={handleSecurityInput}  type="text" placeholder="First name"   className={styles.firstName}  required/><br />
 
         <label htmlFor="lastName" > Name:</label> <br />
-        <input name='lastName' onChange={handleSecurityInput}  type="text" placeholder="lastName"   className={styles.lastName}  required/><br />
+        <input name='lastName' onChange={handleSecurityInput}  type="text" placeholder="Last name"   className={styles.lastName}  required/><br />
     
         <label htmlFor="email">Email:</label><br />
         <input name='email' onChange={handleSecurityInput}  type="email" placeholder="email" className={styles.email}  required/><br />
@@ -89,6 +91,10 @@ export default function SecuritySignUp() {
               <button  type='submit' >SIGN UP</button> 
             <p>Already have an Account? 
               <Link className={styles.linkToLogin} to={'/Login'}> LOGIN </Link> 
+            </p>
+
+            <p className={styles.tenantRegister} >Resident? 
+              <Link className={styles.clickToRegister}  to={'/'}> Click to Register </Link> 
             </p>
           </div>
 

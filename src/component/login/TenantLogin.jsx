@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import styles from './TenantLogin.module.css'
 import {Link, useNavigate} from 'react-router-dom'
 import Swal from 'sweetalert2';
+
+
 export default function TenantLogin() {
 
 const navigate = useNavigate();

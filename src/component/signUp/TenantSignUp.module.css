@@ -64,9 +64,11 @@ select{
 }
 .linkToLogin{
   font-size: rem;
-  color: black;
+  color: blue;
 }
 .securityLinkToLogin{
   margin-top: -20px;
 }
-
+.clickToRegister{
+  color: blue;
+}

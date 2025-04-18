@@ -1,0 +1,143 @@
+.body{
+  border: groove;
+  margin: auto;
+}
+
+.signUpForm{
+  height: 700px;
+  width:500px;
+  display: grid;
+  background-color: rgb(231, 234, 236);
+  gap: 10px ;
+  font-family:'Courier New', Courier, monospace;
+  box-shadow: 5px 5px 10px #b5b6b8;
+  margin: auto;
+}
+.signUp{
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 10px 5px 9px #14181b;
+}
+.newSignUpForm{
+  height: 680px;
+}
+.signUpForm label{
+  font-size: 20px;
+}
+.signUpForm input{
+  margin-top: 20px;
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+  color: rgb(70, 66, 66);
+}
+.alreadyHaveAnAccount{
+  margin: 30px;
+  display: grid;
+}
+.alreadyHaveAnAccount p{
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: bold;
+  justify-content: center;
+  margin-top:1px;
+}
+.alreadyHaveAnAccount button{
+  margin: 30px;
+  width: 170px;
+  height: 50px;
+  color: white;
+  background-color: #259e4d;
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  box-shadow: 5px 5px 10px #485460;
+  border: none;
+  margin-left: 120px;
+}
+.linkToLogin{
+  font-size: rem;
+  color: blue;
+}
+.tenantRegister{
+  margin-top: -20px;
+  color: black;
+}
+.clickToRegister{
+  color: blue;
+}
+
+@media (max-width: 430px) {
+  .body{
+    border: groove;
+    margin: auto;
+  }
+  .signUpForm{
+    height: 800px;
+    width:390px;
+    display: grid;
+    background-color: rgb(231, 234, 236);
+    gap: 5px ;
+    font-family:'Courier New', Courier, monospace;
+    box-shadow: 5px 5px 10px #b5b6b8;
+    margin: auto;
+  }
+  .signUp{
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 10px 5px 9px #14181b;
+  }
+  .newSignUpForm{
+    height: 650px;
+  }
+  .signUpForm label{
+    font-size: 15px;
+  }
+  .signUpForm input{
+    margin-top: 20px;
+    height: 20px;
+    width: 320px;
+    font-size: 15px;
+    color: rgb(70, 66, 66);
+  }
+  .alreadyHaveAnAccount{
+    margin: 30px;
+    display: grid;
+  }
+  .alreadyHaveAnAccount p{
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: center;
+    margin-top:1px;
+  }
+  .alreadyHaveAnAccount button{
+    margin: 10px;
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: #259e4d;
+    cursor: pointer;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 10px #485460;
+    border: none;
+    margin-left: 110px;
+  }
+  .linkToLogin{
+    font-size: rem;
+    color: blue;
+  }
+  .tenantRegister{
+    /* margin-top: -100px; */
+    color: black;
+  }
+  .clickToRegister{
+    color: blue;
+  }
+  
+}
